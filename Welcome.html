@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="icon" href="Icon.PNG">
+    <link rel="stylesheet" href="css/welcome.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/Icons.jpg" alt="" width="150" height="55">
+            <ul>
+                <li><a href="page/Aboutus.html">About Us</a></li>
+                <button onclick="toLogin()" class="b1">Login</button>
+                <button onclick="toSignUp()" class="b2">Sign Up</button>
+            </ul>
+        </nav>
+    </header>
+    <section id="Welcome">
+        <img src="img/Icons.jpg" alt="" class="imgtitle">
+        <p class="texttitle">ImgSearch is a website to find images for inspiration for free and fast. <br>
+            This website provides lots of pictures that you need, starting from wallpapers to icons that you might need,You can also search for the images you need quickly</p>
+        <button class="godown" onclick="todadawn()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+          </svg></button>
+    </section>
+    <section id="search">
+        <h3>Search any Image you want</h3>
+        <p class="s1">Search For idea!</p>
+        <div class="Searchpanel">
+            <span id="searching"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+        </div>
+    </section>
+    <section id="aboutus">
+        <img src="img/Icons.jpg" alt="" class="imgtitleabs">
+        <div>
+            <h1 class="s3">Find More About Us Here!</h1>
+            <button onclick="Findmoreus()"  class="fmus">About Us</button>
+        </div>
+    </section>
+    <section id="loginsection">
+        <h1 class="s4">Login To Our Website</h1>
+        <p class="texttitle">Login and get the image you want for FREE!</p>
+        <button onclick="toLogin()"  class="fmus">Login</button>
+    </section>
+    <footer id="credit">
+        <p>Website Create By Gazach &copy; Copyright 2023</p>
+    </footer>
+    <!--Script List-->
+    <script src="js/direct.js"></script>
+    <script>
+        function todadawn() {
+            location.href = "#search";
+        }
+    </script>
+    <script>
+        function Findmoreus() {
+    location.href = "page/Aboutus.html";
+}
+    </script>
+</body>
+</html>
